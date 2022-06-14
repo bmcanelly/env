@@ -1,0 +1,15 @@
+.secrets.zsh
+src
+sandbox
+bin
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+
+**/*.swp

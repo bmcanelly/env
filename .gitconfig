@@ -1,0 +1,9 @@
+[user]
+  email = bmcanelly@gmail.com
+	name = Bret Ellis
+
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
