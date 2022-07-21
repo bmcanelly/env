@@ -17,6 +17,10 @@ alias xbwsbx='export AWS_PROFILE=bwsbx'
 alias devds='rails s -p 4000'
 alias devui='yarn install ; rails s -p 3050'
 
+alias awslogs=$HOME/.local/bin/awslogs
+
+alias lsatr='ls -lAhtr'
+
 
 # exports
 export RAILS_ENV=development

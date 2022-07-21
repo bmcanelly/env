@@ -1,7 +1,7 @@
 
 let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
-let g:indent_guides_start_level = 2
+let g:indent_guides_start_level = 1
 let g:polyglot_disabled = ['markdown']
 
 "  install with :source %, then :PlugInstall
@@ -29,6 +29,8 @@ Plug 'cocopon/iceberg.vim', { 'as': 'iceberg' }
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'jpo/vim-railscasts-theme'
+Plug 'endel/vim-github-colorscheme'
 
 
 call plug#end()
@@ -40,12 +42,14 @@ set background=dark
 " colorscheme apprentice
 " colorscheme darkfrost
 " colorscheme dogrun
+" colorscheme github 
 " colorscheme gotham256
 colorscheme iceberg
 " colorscheme jellybeans
 " colorscheme nord
 " colorscheme onehalfdark
 " colorscheme palenight
+" colorscheme railscasts
 
 
 syntax on
