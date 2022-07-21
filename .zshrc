@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=powerlevel10k/powerlevel10k
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent lifetime 8h
+zstyle :omz:plugins:ssh-agent lifetime 168h
 zstyle :omz:plugins:ssh-agent lazy yes
 
 DISABLE_UPDATE_PROMPT="true"
@@ -70,6 +70,6 @@ setopt HIST_IGNORE_ALL_DUPS
 set -o vi
 
 # Personal vars/secrets files
-[[ ! -f ~/.vars.zsh ]] || source ~/.vars.zsh
-[[ ! -f ~/.secrets.zsh ]] || source ~/.secrets.zsh
-[[ ! -f ~/.bw.zsh ]] || source ~/.bw.zsh
+[[ -e ~/.vars.zsh ]] && . ~/.vars.zsh
+[[ -e ~/.secrets.zsh ]] && . ~/.secrets.zsh
+[[ -e ~/.bw.zsh ]] && . ~/.bw.zsh
