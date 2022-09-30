@@ -1161,6 +1161,7 @@
   typeset -g POWERLEVEL9K_RVM_SHOW_PREFIX=false
   # Custom icon.
   typeset -g POWERLEVEL9K_RVM_VISUAL_IDENTIFIER_EXPANSION=''
+  typeset -g POWERLEVEL9K_RVM_CONTENT_EXPANSION='${GEM_HOME/#*-} ${RAILS_ENV//\%/%%}'
 
   ###########[ fvm: flutter version management (https://github.com/leoafarias/fvm) ]############
   # Fvm color.
