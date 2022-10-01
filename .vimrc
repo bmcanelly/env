@@ -44,8 +44,8 @@ set background=dark
 " colorscheme dogrun
 " colorscheme github 
 " colorscheme gotham256
-colorscheme iceberg
-" colorscheme jellybeans
+" colorscheme iceberg
+colorscheme jellybeans
 " colorscheme nord
 " colorscheme onehalfdark
 " colorscheme palenight
