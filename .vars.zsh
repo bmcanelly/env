@@ -12,11 +12,14 @@ alias xbel='export AWS_PROFILE=bel'
 alias xbwpng='export AWS_PROFILE=bwpng'
 alias xbwsbx='export AWS_PROFILE=bwsbx'
 
+alias devcg='rsp 3000'
 alias devds='be guard'
 alias devui='yin ; fmns -f Procfile.dev'
 alias RES='RAILS_ENV=staging'
 
-alias awslogs=$HOME/.local/bin/awslogs
+if [[ $(uname) != 'Darwin' ]] ; then
+  alias awslogs=$HOME/.local/bin/awslogs
+fi
 
 alias lsatr='ls -lAhtr'
 
