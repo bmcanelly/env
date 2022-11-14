@@ -5,7 +5,7 @@ if [[ $(uname) == 'Darwin' ]] ; then
   alias vim=/opt/homebrew/bin/vim
 fi
 
-alias _aws='docker run --rm -it -v ~/.aws:/root/.aws -e LC_ALL=en_US.utf8  -e AWS_PROFILE=bw amazon/aws-cli '
+alias _aws='docker run --rm -it -v ~/.aws:/root/.aws -e LC_ALL=en_US.utf8  -e AWS_PROFILE=$AWS_PROFILE amazon/aws-cli '
 
 alias xbw='export AWS_PROFILE=bw'
 alias xbel='export AWS_PROFILE=bel'
