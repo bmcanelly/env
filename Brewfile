@@ -48,6 +48,7 @@ brew "netcat"
 brew "ngrep"
 brew "nmap"
 brew "nvm"
+brew "openjdk"
 brew "perl"
 brew "postgresql@14", restart_service: true
 brew "procs"
