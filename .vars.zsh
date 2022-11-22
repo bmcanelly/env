@@ -17,6 +17,9 @@ alias devds='be guard'
 alias devui='yin ; fmns -f Procfile.dev'
 alias RES='RAILS_ENV=staging'
 
+alias fdec='openssl enc -pbkdf2 -aes256 -d -a -in ${file_name}.enc -out ${file_name}'
+alias fenc='openssl enc -pbkdf2 -aes256 -salt -e -a -in ${file_name} -out ${file_name}.enc'
+
 if [[ $(uname) != 'Darwin' ]] ; then
   alias awslogs=$HOME/.local/bin/awslogs
 fi
