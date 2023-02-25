@@ -1,9 +1,9 @@
 [user]
   email = bmcanelly@gmail.com
-  name = Bret Ellis
+	name = Bret Ellis
 
 [core]
-  pager = delta
+	pager = delta
 
 [interactive]
-  diffFilter = delta --color-only
+	diffFilter = delta --color-only
