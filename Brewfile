@@ -55,6 +55,7 @@ brew "perl"
 brew "postgresql@14"
 brew "procs"
 brew "pwgen"
+brew "redis", restart_service: true
 brew "ruby"
 brew "rust"
 brew "screen"
