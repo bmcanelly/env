@@ -11,16 +11,14 @@ alias _aws='docker run --rm -it -v ~/.aws:/root/.aws -e LC_ALL=en_US.utf8  -e AW
 
 alias xbw='export AWS_PROFILE=bw'
 alias xbel='export AWS_PROFILE=bel'
-alias xbwpng='export AWS_PROFILE=bwpng'
-alias xbwsbx='export AWS_PROFILE=bwsbx'
 
-alias devcg='rsp 3001'
-alias devds='rsp 4000'
-alias devui='yin ; fmns -f Procfile.dev'
+alias devcg='fmns -f Procfile.dev'
+alias devds='fmns -f Procfile.dev'
+alias devui='fmns -f Procfile.dev'
 alias RES='RAILS_ENV=staging'
 
-alias fdec='openssl enc -pbkdf2 -aes256 -d -a -in ${file_name}.enc -out ${file_name}'
-alias fenc='openssl enc -pbkdf2 -aes256 -salt -e -a -in ${file_name} -out ${file_name}.enc'
+alias fdec='function fdec() { openssl enc -pbkdf2 -aes256 -d -in ${1}.enc -out ${1} } ; fdec'
+alias fenc='function fenc() { openssl enc -pbkdf2 -aes256 -salt -e -a -in ${1} -out ${1}.enc } ; fenc'
 
 alias lsatr='ls -lAhFtr'
 

@@ -29,7 +29,6 @@ plugins=(
   rails
   rake
   redis-cli
-  rvm
   ruby
   screen
   ssh-agent
@@ -42,20 +41,11 @@ plugins=(
   zsh-syntax-highlighting
 )
 
-export NVM_DIR="$HOME/.nvm"
 if [[ $(uname) == 'Darwin' ]] ; then
   plugins+=('brew')
-  NVM_SH=/opt/homebrew/opt/nvm/nvm.sh
-else
-  NVM_SH=$NVM_DIR/nvm.sh
 fi
-[ -s "$NVM_SH" ] && \. "$NVM_SH"
 
 source $ZSH/oh-my-zsh.sh
-
-export PATH="$HOME/.rvm/bin:$PATH:$HOME/bin"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -73,4 +63,9 @@ set -o vi
 # Personal vars/secrets files
 [[ -e ~/.vars.zsh ]] && . ~/.vars.zsh
 [[ -e ~/.secrets.zsh ]] && . ~/.secrets.zsh
-[[ -e ~/.bw.zsh ]] && . ~/.bw.zsh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. ~/.asdf/installs/rust/1.70.0/bin
+. ~/.asdf/plugins/java/set-java-home.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
