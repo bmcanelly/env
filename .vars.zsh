@@ -11,6 +11,7 @@ alias _aws='docker run --rm -it -v ~/.aws:/root/.aws -e LC_ALL=en_US.utf8  -e AW
 
 alias xbw='export AWS_PROFILE=bw'
 alias xbel='export AWS_PROFILE=bel'
+alias xhhs='export AWS_PROFILE=hhs'
 
 alias devcg='fmns -f Procfile.dev'
 alias devds='fmns -f Procfile.dev'
@@ -21,6 +22,10 @@ alias fdec='function fdec() { openssl enc -pbkdf2 -aes256 -d -in ${1}.enc -out $
 alias fenc='function fenc() { openssl enc -pbkdf2 -aes256 -salt -e -a -in ${1} -out ${1}.enc } ; fenc'
 
 alias lsatr='ls -lAhFtr'
+
+alias tf='tofu'
+
+alias asdfplugup='asdf plugin update --all'
 
 
 

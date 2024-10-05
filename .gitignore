@@ -1,15 +1,11 @@
-.secrets.zsh
-src
-sandbox
-bin
-Applications
-Desktop
-Documents
-Downloads
-Library
-Movies
-Music
-Pictures
-Public
+# ignore it all
+*
 
-**/*.swp
+# unignore
+!.gitignore
+!.gitconfig
+!.p10k.zsh
+!.vars.zsh
+!.vimrc
+!.zshrc
+!Brewfile
