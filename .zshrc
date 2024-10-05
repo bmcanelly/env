@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=powerlevel10k/powerlevel10k
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent lifetime 168h
+zstyle :omz:plugins:ssh-agent lifetime 4h
 zstyle :omz:plugins:ssh-agent lazy yes
 
 DISABLE_UPDATE_PROMPT="true"
@@ -24,15 +24,15 @@ plugins=(
   history
   jsontools
   kubectl
-  node
   npm
+  python
   rails
   rake
   redis-cli
   ruby
   screen
   ssh-agent
-  terraform
+  opentofu
   tmux
   urltools
   yarn
@@ -58,13 +58,18 @@ export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
 set -o vi
 
 # Personal vars/secrets files
 [[ -e ~/.vars.zsh ]] && . ~/.vars.zsh
 [[ -e ~/.secrets.zsh ]] && . ~/.secrets.zsh
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+if [[ $(uname) == 'Darwin' ]] ; then
+  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+fi
+. "$HOME/.asdf/asdf.sh"
 . ~/.asdf/installs/rust/1.70.0/bin
 . ~/.asdf/plugins/java/set-java-home.zsh
 
