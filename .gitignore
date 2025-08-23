@@ -5,6 +5,7 @@
 !.gitignore
 !.gitconfig
 !.p10k.zsh
+!.tool-versions
 !.vars.zsh
 !.vimrc
 !.zshrc
